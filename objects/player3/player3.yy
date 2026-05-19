@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"sprite3",
+  "%Name":"player3",
   "eventList":[],
   "managed":true,
-  "name":"sprite3",
+  "name":"player3",
   "overriddenProperties":[],
   "parent":{
     "name":"objects",
