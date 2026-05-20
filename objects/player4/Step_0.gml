@@ -1,0 +1,1 @@
+move_towards_point(player1.x,player1.y,enemy_spd)

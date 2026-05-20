@@ -1,10 +1,10 @@
-yspeed+=0.1
-xspeed=0
+global.yspeed+=0.1
+global.xspeed=0
 
 
 if keyboard_check(ord("A"))
 {
-   xspeed=-5
+   global.xspeed=-5
 
 
 }
@@ -14,27 +14,29 @@ if keyboard_check(ord("A"))
 if keyboard_check(ord("D"))
 {
 
-    xspeed=+5
+    global.xspeed=+5
 
 }
 
 
 if place_meeting(x, y+1, player3)
 {
-    yspeed=0
+    global.yspeed=0
     if keyboard_check(ord("W"))
       {
-        yspeed=-4
+        global.yspeed=-4
 		}
 }
 
-
-
+if place_meeting(x, y+1, player4)
+{
+    global.xspeed=-80
+}
 if place_meeting(x, y+1, player2)
 {
-    room_restart()
+    instance_create_layer(x, y, "Instances_1", player4)
 }
 
 
 
-move_and_collide(xspeed, yspeed, player3)
+move_and_collide(global.xspeed, global.yspeed, player3)
