@@ -1,3 +1,7 @@
 window_set_size(1920,1080)
-xspeed=0
-yspeed=0
+global.xspeed=0
+global.yspeed=0
+if (instance_number(player1) > 1)
+{
+    instance_destroy();
+}
