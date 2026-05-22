@@ -57,7 +57,7 @@ if (place_meeting(x, y + 1, player5))
 {
     if (global.flip)
     {
-        global.yspeed = 8;
+        global.yspeed = 100000000000;
     }
     else
     {
