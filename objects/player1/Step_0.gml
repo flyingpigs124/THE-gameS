@@ -53,7 +53,17 @@ if place_meeting(x, y+1, player2)
 {
     instance_create_layer(x, y, "Instances_1", player4)
 }
-
+if (place_meeting(x, y + 1, player5))
+{
+    if (global.flip)
+    {
+        global.yspeed = 8;
+    }
+    else
+    {
+        global.yspeed = -6;
+    }
+}
 
 image_yscale = global.flip ? -1 : 1;
 move_and_collide(global.xspeed, global.yspeed, player3)
