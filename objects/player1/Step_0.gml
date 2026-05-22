@@ -1,6 +1,22 @@
-global.yspeed+=0.1
-global.xspeed=0
 
+global.xspeed=0
+if (global.flip)
+{
+    global.yspeed -= 0.1; // gravity UP
+}
+else
+{
+    global.yspeed += 0.1; // gravity DOWN
+}
+if place_meeting(x, y-1, player3)
+    {
+        global.yspeed = 0;
+
+        if keyboard_check(ord("W"))
+        {
+            global.yspeed = 4.5; // jump DOWN
+        }
+    }
 
 if keyboard_check(ord("A"))
 {
@@ -31,6 +47,7 @@ if place_meeting(x, y+1, player3)
 if place_meeting(x, y+1, player4)
 {
     global.xspeed=-80
+	global.flip = !global.flip;
 }
 if place_meeting(x, y+1, player2)
 {
@@ -38,5 +55,5 @@ if place_meeting(x, y+1, player2)
 }
 
 
-
+image_yscale = global.flip ? -1 : 1;
 move_and_collide(global.xspeed, global.yspeed, player3)
