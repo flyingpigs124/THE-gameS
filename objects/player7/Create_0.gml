@@ -1,0 +1,1 @@
+enemy_spd2=2
