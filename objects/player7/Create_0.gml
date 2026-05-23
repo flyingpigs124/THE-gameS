@@ -1,1 +1,2 @@
-enemy_spd2=2
+global.xspeed_block=0
+global.yspeed_block=0
