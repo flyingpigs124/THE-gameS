@@ -1,4 +1,4 @@
-
+var move = keyboard_check(ord("D")) - keyboard_check(ord("A"));
 global.xspeed=0
 if (global.flip)
 {
@@ -64,6 +64,11 @@ if (place_meeting(x, y + 1, player5))
         global.yspeed = -6;
     }
 }
+if place_meeting(x, y+1, player6)
+{
+    global.xspeed *= 2
+}
+
 
 image_yscale = global.flip ? -1 : 1;
 move_and_collide(global.xspeed, global.yspeed, player3)
