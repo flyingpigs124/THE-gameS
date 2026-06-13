@@ -25,6 +25,7 @@
   "resources":[
     {"id":{"name":"Extension1","path":"extensions/Extension1/Extension1.yy",},},
     {"id":{"name":"Font1","path":"fonts/Font1/Font1.yy",},},
+    {"id":{"name":"camera","path":"objects/camera/camera.yy",},},
     {"id":{"name":"player1","path":"objects/player1/player1.yy",},},
     {"id":{"name":"player2","path":"objects/player2/player2.yy",},},
     {"id":{"name":"player3","path":"objects/player3/player3.yy",},},
@@ -36,6 +37,7 @@
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"background1","path":"sprites/background1/background1.yy",},},
     {"id":{"name":"Sprite1","path":"sprites/Sprite1/Sprite1.yy",},},
+    {"id":{"name":"Sprite11","path":"sprites/Sprite11/Sprite11.yy",},},
     {"id":{"name":"Sprite2","path":"sprites/Sprite2/Sprite2.yy",},},
     {"id":{"name":"Sprite3","path":"sprites/Sprite3/Sprite3.yy",},},
     {"id":{"name":"Sprite4","path":"sprites/Sprite4/Sprite4.yy",},},
