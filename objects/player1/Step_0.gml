@@ -12,7 +12,7 @@ if place_meeting(x, y-1, player3)
     {
         global.yspeed = 0;
 
-        if keyboard_check(ord("W"))
+        if keyboard_check(vk_space)
         {
             global.yspeed = 4.5; // jump DOWN
 			
@@ -40,7 +40,7 @@ if keyboard_check(ord("D"))
 if place_meeting(x, y+1, player3)
 {
     global.yspeed=0
-    if keyboard_check(ord("W"))
+    if keyboard_check(vk_space)
       {
         global.yspeed=-4.5}
 		
