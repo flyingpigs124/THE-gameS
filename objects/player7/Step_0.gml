@@ -7,18 +7,6 @@ if (other_enemy != noone && other_enemy != id)
 }
 
 
-if (place_meeting(x, y, player8))
-{
-    var playerhit = instance_place(x, y, player8);
-
-    if (playerhit != noone)
-    {
-        var dir = sign(playerhit.x - x);
-
-        // move out until NOT colliding
-        while (place_meeting(playerhit.x, playerhit.y, id))
-        {
-            playerhit.x += dir;
-        }
-    }
+if (place_meeting(player7.x, player7.y, player8)) {
+    x -= 7
 }
